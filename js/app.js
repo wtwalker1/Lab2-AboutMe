@@ -52,3 +52,57 @@ let userAnswer5 = prompt('Am I Canadian?');
         } else {
             alert('I am Canadian. I have a maple leaf tattooed on me to prove it');
         }
+
+let correctAnswers = 0;
+let age = 27;
+
+for (let i = 0; i < 4; i++){
+    let ageAnswer = prompt('How old am I?');
+    if (ageAnswer == age) {
+        alert('That is correct, I am ' + age + ' years young hehe');
+        console.log('User answered ' + ageAnswer);
+        correctAnswers++;
+        break;
+    }
+    else if (ageAnswer > age) {
+        alert('Too high');
+        console.log('User answered ' + ageAnswer);
+    }
+    else if (ageAnswer < age) {
+        alert('Too low');
+        console.log('User answered ' + ageAnswer);
+    }
+    else if (isNaN(ageAnswer) === true) {
+        alert('That is not a valid number');
+        console.log('User answered ' + ageAnswer);
+    }
+    else if ((i === 3) && (ageAnswer !== age)) {
+        alert('You have exhuasted your tries and myself. My age is ' + age);
+        console.log('User answered ' + ageAnswer);
+    }
+}
+
+let pizzaChoices = ['Pepporoni', 'Sausage', 'Canadian Bacon', 'Cheese'];
+let pizza = 'Pepporoni';
+
+while (tries <=5) {
+    let answer7 = prompt('Can you guess my favorite type of pizza?').toLowerCase();
+    for(let i = 0; i < pizzaChoices.length; i++){
+        console.log(answer7);
+        console.log(pizzaChoices[i]);
+        if(answer7 === answers[i]) {
+            alert('That is correct');
+            points +=1;
+            alert('My favorite pizza is pepperoni');
+            tries = 5;
+            break;
+        }
+        if(tries !==5){
+            alert('Try again');
+        }
+        tries = tries + 1;
+        if(tries === 5){
+            alert('My favorite pizza is pepperoni');
+        }
+    }
+}
