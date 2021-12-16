@@ -42,9 +42,8 @@ two();
 
 
 
-
-
-let userAnswer3 = prompt('Did I just move to Des Moines from Boulder, CO?');
+function three(){
+    let userAnswer3 = prompt('Did I just move to Des Moines from Boulder, CO?');
         console.log('The user said', userAnswer3);
 
         if (userAnswer3 == 'Yes') {
@@ -53,6 +52,12 @@ let userAnswer3 = prompt('Did I just move to Des Moines from Boulder, CO?');
         } else {
             alert('Actually I did. I would not lie about such a matter');
         }
+}
+three();
+
+
+
+
 
 let userAnswer4 = prompt('Can I juggle?');
         console.log('The user said', userAnswer4);
