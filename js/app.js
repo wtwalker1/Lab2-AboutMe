@@ -71,16 +71,19 @@ function four(){
 }
 four();
 
+function five(){
+    let userAnswer5 = prompt('Am I Canadian?');
+    console.log('The user said', userAnswer5);
 
-let userAnswer5 = prompt('Am I Canadian?');
-        console.log('The user said', userAnswer5);
+    if (userAnswer5 == 'Yes') {
+        points +=1;
+        alert('Correct. My dad is full Canadian, making me half');
+    } else {
+        alert('I am Canadian. I have a maple leaf tattooed on me to prove it');
+    }
+}
+five();
 
-        if (userAnswer5 == 'Yes') {
-            points +=1;
-            alert('Correct. My dad is full Canadian, making me half');
-        } else {
-            alert('I am Canadian. I have a maple leaf tattooed on me to prove it');
-        }
 
 let correctAnswers = 0;
 let age = 27;
