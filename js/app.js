@@ -22,7 +22,9 @@ function  one(){
 
 one();
 
-let userAnswer2 = prompt('Was my first job at Sonic as a cook?');
+
+function two(){
+    let userAnswer2 = prompt('Was my first job at Sonic as a cook?');
     console.log('The user said', userAnswer2);
 
         if (userAnswer2 == 'Yes') {
@@ -31,7 +33,17 @@ let userAnswer2 = prompt('Was my first job at Sonic as a cook?');
         } else {
             alert('Sorry it was. I always left smelling like onions and did not enjoy it very much');
         }
+}
+two();
+
     
+
+
+
+
+
+
+
 let userAnswer3 = prompt('Did I just move to Des Moines from Boulder, CO?');
         console.log('The user said', userAnswer3);
 
