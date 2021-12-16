@@ -123,30 +123,35 @@ six();
 
 
 
+function pizza(){
+  let pizzaChoices = ['pepperoni', 'sausage', 'canadian bacon', 'cheese'];
+  let tries = 0;
 
-
-let pizzaChoices = ['pepperoni', 'sausage', 'canadian bacon', 'cheese'];
-let tries = 0;
-
-while (tries < 5) {
-  let answer7 = prompt('Can you guess my favorite type of pizza?').toLowerCase().trim();
-  for(let i = 0; i < pizzaChoices.length; i++){
-    console.log('userInput',answer7);
-    console.log(pizzaChoices[i]);
-    if(answer7 === 'pepperoni') {
-      alert('That is correct');
-      points +=1;
-      tries = 5;
-      break;
+  while (tries < 5) {
+    let answer7 = prompt('Can you guess my favorite type of pizza?').toLowerCase().trim();
+    for(let i = 0; i < pizzaChoices.length; i++){
+      console.log('userInput',answer7);
+      console.log(pizzaChoices[i]);
+      if(answer7 === 'pepperoni') {
+        alert('That is correct');
+        points +=1;
+        tries = 5;
+        break;
+      }
+      if(tries !==5){
+        alert('Try again');
+        break;
+      }
     }
-    if(tries !==5){
-      alert('Try again');
-      break;
-    }
+    tries = tries + 1;
   }
-  tries = tries + 1;
+  if(tries === 5){
+    alert('My favorite pizza is pepperoni');
+  }
+
+
+
 }
-if(tries === 5){
-  alert('My favorite pizza is pepperoni');
-}
+pizza();
+
 console.log(points);
