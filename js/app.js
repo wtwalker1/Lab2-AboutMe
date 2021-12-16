@@ -64,11 +64,11 @@ for (let i = 0; i < 4; i++){
         correctAnswers++;
         break;
     }
-    else if (ageAnswer > age) {
+    else if (ageAnswer > age && (i !== 3)) {
         alert('Too high');
         console.log('User answered ' + ageAnswer);
     }
-    else if (ageAnswer < age) {
+    else if (ageAnswer < age && (i !== 3)) {
         alert('Too low');
         console.log('User answered ' + ageAnswer);
     }
