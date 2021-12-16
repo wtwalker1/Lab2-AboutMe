@@ -8,8 +8,8 @@ console.log('this is the user name', userName);
 
 alert('Hello new friend ' + userName);
 
-
-let userAnswer = prompt("Do I live in Des Moines, IA?");
+function  one(){
+    let userAnswer = prompt("Do I live in Des Moines, IA?");
     console.log('The user said', userAnswer);
     
         if (userAnswer == 'Yes') {
@@ -18,7 +18,9 @@ let userAnswer = prompt("Do I live in Des Moines, IA?");
         } else {
             alert('Actually I do live in Des Moines');
         }
+}
 
+one();
 
 let userAnswer2 = prompt('Was my first job at Sonic as a cook?');
     console.log('The user said', userAnswer2);
