@@ -58,8 +58,8 @@ three();
 
 
 
-
-let userAnswer4 = prompt('Can I juggle?');
+function four(){
+    let userAnswer4 = prompt('Can I juggle?');
         console.log('The user said', userAnswer4);
 
         if (userAnswer4 == 'Yes') {
@@ -68,6 +68,9 @@ let userAnswer4 = prompt('Can I juggle?');
         } else {
             alert('Actually I can. Hopefully I can juggle 4 balls soon');
         }
+}
+four();
+
 
 let userAnswer5 = prompt('Am I Canadian?');
         console.log('The user said', userAnswer5);
