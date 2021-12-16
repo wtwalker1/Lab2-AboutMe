@@ -93,8 +93,12 @@ function six(){
   let age = 27;
 
   for (let i = 0; i < 4; i++){
+    //our input returns a string data type. 
+    // let ageAnswer =   parseInt(prompt('How old am I?'));
     let ageAnswer = prompt('How old am I?');
-    if (ageAnswer === age) {
+
+    // eslint-disable-next-line eqeqeq
+    if (ageAnswer == age) {
       alert('That is correct, I am ' + age + ' years young hehe');
       console.log('User answered ' + ageAnswer);
       points +=1;
