@@ -12,7 +12,7 @@ function one(){
   let userAnswer = prompt('Do I live in Des Moines, IA?');
   console.log('The user said', userAnswer);
 
-  if (userAnswer === 'Yes') {
+  if (userAnswer === 'Yes' || 'yes' || 'y') {
     points +=1;
     alert('Correct, I live in the capitol of the Heartland');
   } else {
