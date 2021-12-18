@@ -3,6 +3,7 @@ body {
 }
 
 header {
+    background-color: darksalmon;
     margin-bottom: 20px;
 }
 
@@ -13,7 +14,25 @@ h1 {
 }
 
 h2 {
+    background-color: darkslateblue;
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 5px;
+}
+
+ul {
+    background-color: darkturquoise;
+}
+
+ol {
+    background-color: deeppink;
+}
+
+p {
+    background-color: firebrick;
+}
+
+footer {
+    background-color: green;
+    margin-top: 5px;
 }

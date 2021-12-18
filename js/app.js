@@ -27,7 +27,7 @@ function two(){
   let userAnswer2 = prompt('Was my first job at Sonic as a cook?');
   console.log('The user said', userAnswer2);
 
-  if (userAnswer2 === 'Yes') {
+  if (userAnswer2 === 'Yes' || 'yes' || 'y') {
     points +=1;
     alert('Correct. I worked there for two months and then literally forgot I had a job once sports started again');
   } else {
@@ -62,7 +62,7 @@ function four(){
   let userAnswer4 = prompt('Can I juggle?');
   console.log('The user said', userAnswer4);
 
-  if (userAnswer4 === 'Yes') {
+  if (userAnswer4 === 'Yes' || 'yes' || 'y') {
     points +=1;
     alert('Correct. It is my most valuable skill');
   } else {
@@ -75,7 +75,7 @@ function five(){
   let userAnswer5 = prompt('Am I Canadian?');
   console.log('The user said', userAnswer5);
 
-  if (userAnswer5 === 'Yes') {
+  if (userAnswer5 === 'Yes'|| 'yes' || 'y') {
     points +=1;
     alert('Correct. My dad is full Canadian, making me half');
   } else {
